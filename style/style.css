@@ -125,7 +125,7 @@ body {
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -35px;
+  top: -75px;
   left: 41.5%;
   /* transform: scale(0.1); */
 }
@@ -230,12 +230,17 @@ body {
 #replay {
   z-index: 3;
   cursor: pointer;
+  text-decoration: underline;
+}
+#replay:hover {
+  font-weight: bold;
+  color: salmon;
 }
 
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
-    left: 40%;
+    left: 44%;
   }
 }
 
@@ -253,7 +258,7 @@ body {
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
-    left: 32%;
+    left: 40%;
   }
 }
 
@@ -296,4 +301,8 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+}
+#bold{
+  text-decoration: underline;
+  color: rgb(21, 161, 237);
 }

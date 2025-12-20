@@ -221,7 +221,7 @@ const animationTimeline = () => {
       "-=2"
     )
     .from(".hat", 0.5, {
-      x: -100,
+      x: -80,
       y: 350,
       rotation: -180,
       opacity: 0
@@ -297,6 +297,7 @@ const animationTimeline = () => {
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
+  replyBtn.textContent.at(7).concat('👍')
   replyBtn.addEventListener("click", () => {
     tl.restart();
   });
